@@ -1,0 +1,8 @@
+spring:
+  r2dbc:
+    url: "${JDBC_DATABASE_URL:r2dbc:postgresql://localhost/rgb}"
+    username: "${JDBC_DATABASE_USER:root}"
+    password: "${JDBC_DATABASE_PASSWORD:root}"
+    pool:
+      initial-size: 200
+      max-size: 200
